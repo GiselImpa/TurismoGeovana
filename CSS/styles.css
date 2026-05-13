@@ -1,0 +1,269 @@
+/* NAVBAR SIEMPRE ARRIBA */
+.navbar {
+    position: relative;
+    z-index: 99999;
+}
+body {
+    background-color:rgb(232, 229, 225);
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background-image: url('../Imagen/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+    z-index: 1; /* BAJAMOS ESTO */
+}
+
+.hero div {
+    position: relative;
+    z-index: 2; /* El texto queda arriba de la imagen */
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-animado {
+    animation: fadeUp 1.2s ease-out forwards;
+}
+#hero-title {
+    animation-delay: 0.2s;
+}
+
+#hero-subtitle {
+    animation-delay: 0.5s;
+}
+#hero-btn {
+    background-color: #ffffff !important;
+    color: #16a085 !important;
+    border: 2px solid #16a085 !important;
+    animation-delay: 0.8s;
+}
+
+#hero-btn:hover {
+    background-color: #16a085 !important;
+    color: #ffffff !important;
+}
+
+
+#hero-btn .icono-travel {
+    width: 32px !important;
+    height: 32px !important;
+    display: inline-block !important;
+    background-image: url('../Imagen/SpriteIconos.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 240px 48px !important;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* DESTINO CARD */
+.destino-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destino-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.destino-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* CONTADOR */
+.contador {
+    color: #0d6efd;
+}
+
+/* TESTIMONIOS */
+#carouselTestimonios p {
+    font-size: 1.3rem;
+}
+
+#carouselTestimonios h5 {
+    color: #0d6efd;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1ABC9C; /* Azul turquesa */
+    color: #fff; /* Texto blanco para contraste */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Enlaces dentro del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover en enlaces */
+footer a:hover {
+    color: #0d6efd; /* Azul más intenso al pasar el mouse */
+}
+
+
+/* FLIP CARDS */
+.flip-card {
+    perspective: 1000px;
+    height: 380px;
+    position: relative;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    background: #0d6efd;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* TABLA PRECIOS */
+.tabla-precios tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tabla-precios tbody tr:hover {
+    background-color: #e7f1ff;
+    transform: scale(1.02);
+}
+
+/* ANIMACIONES SCROLL */
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BLOG */
+.post img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.icono-travel {
+    width: 48px;
+    height: 48px;
+    background-image: url('../Imagen/SpriteIconos.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    /* 5 iconos × 48px = 240px */
+    background-size: 240px 48px;
+}
+
+/* 1) Avión */
+.icono-avion {
+    background-position: 0 0;
+}
+
+/* 2) Brújula */
+.icono-brujula {
+    background-position: -48px 0;
+}
+
+/* 3) Auto */
+.icono-auto {
+    background-position: -96px 0;
+}
+
+/* 4) Globo */
+.icono-globo {
+    background-position: -144px 0;
+}
+
+/* 5) Valija */
+.icono-valija {
+    background-position: -192px 0;
+}
+.icono-travel {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-image: url('../Imagen/SpriteIconos.png');
+    background-repeat: no-repeat;
+    background-size: 240px 48px; /* 5 iconos × 48px */
+
+}
+
+/* Avión */
+.icono-avion {
+    background-position: 0 0;
+}
+
+/* Brújula */
+.icono-brujula {
+    background-position: -48px 0;
+}
+
+/* Auto */
+.icono-auto {
+    background-position: -96px 0;
+}
+
+/* Globo */
+.icono-globo {
+    background-position: -144px 0;
+}
+
+/* Valija */
+.icono-valija {
+    background-position: -192px 0;
+}
+footer .icono-travel {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours Geovana</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-globe-americas"></i> Tours Geovana
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <!-- Dropdown Destinos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Destinos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinos.html">Todos los destinos</a></li>
+                            <li><a class="dropdown-item" href="destinos.html#norte">Norte Argentino</a></li>
+                            <li><a class="dropdown-item" href="destinos.html#sur">Sur Argentino</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="agencias.html">Agencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <header class="hero d-flex align-items-center justify-content-center text-center text-white">
+        <div>
+            <h1 id="hero-title" class="display-3 fw-bold hero-animado">
+                Descubrí más allá que una aventura
+            </h1>
+
+            <p id="hero-subtitle" class="lead hero-animado">
+                Experiencias únicas, tanto en el norte como en el resto del país
+            </p>
+
+            <a href="../Componente/destinos.html"
+                class="btn btn-primary btn-lg mt-3 hero-animado d-flex align-items-center justify-content-center gap-2"
+                id="hero-btn">
+
+                <span class="icono-travel icono-globo"></span>
+                Ver destinos
+            </a>
+
+
+        </div>
+    </header>
+    <!-- DESTINOS DESTACADOS -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4 fw-bold">Destinos destacados</h2>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card destino-card shadow-sm">
+                    <img src="../Imagen/ParqueCalileguaJujuy.jpg" class="card-img-top" alt="Jujuy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jujuy</h5>
+                        <p class="card-text">Colores, tradición y paisajes únicos.</p>
+                        <a href="destinos.html#jujuy" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card destino-card shadow-sm">
+                    <img src="../Imagen/SantiagoDelEstero.jpeg" class="card-img-top" alt="Salta">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Santiago del Estero</h5>
+                        <p class="card-text">Historia, cultura y gastronomía.</p>
+                        <a href="destinos.html#santiago" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card destino-card shadow-sm">
+                    <img src="../Imagen/Mendoza.jpg" class="card-img-top" alt="Tilcara">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mendoza</h5>
+                        <p class="card-text">Magia, cerros y tradición.</p>
+                        <a href="destinos.html#Mendoza" class="btn btn-primary">Ver mas</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- CONTADOR ANIMADO -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+
+            <h2 class="fw-bold mb-4">Nuestros números</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <h3 class="contador display-5 fw-bold" data-target="1500">0</h3>
+                    <p>Turistas felices</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="contador display-5 fw-bold" data-target="45">0</h3>
+                    <p>Destinos disponibles</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="contador display-5 fw-bold" data-target="12">0</h3>
+                    <p>Agencias asociadas</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="contador display-5 fw-bold" data-target="8">0</h3>
+                    <p>Años de experiencia</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIOS -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">Testimonios</h2>
+
+            <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Testimonio 1 -->
+                    <div class="carousel-item active text-center">
+                        <p class="lead fst-italic">"Una experiencia unica e inilvidanle. Super recomendado."</p>
+                        <h5 class="fw-bold mt-3">Lorena Carrazana</h5>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="carousel-item text-center">
+                        <p class="lead fst-italic">"Los mejores paisajes del norte argentino. Recomendadísimo."</p>
+                        <h5 class="fw-bold mt-3">Carlos Lopez</h5>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="carousel-item text-center">
+                        <p class="lead fst-italic">"Excelente atención y guías súper profesionales."</p>
+                        <h5 class="fw-bold mt-3">Eugenia Herrera</h5>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-white pt-5 pb-3 mt-5">
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Columna 1: Info -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Tours Geovana</h4>
+                    <p>Descubrí los mejores destinos del norte argentino con experiencias únicas y seguras.</p>
+
+                    <!-- Redes sociales -->
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Formulario -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Contacto rápido</h4>
+
+                    <form>
+                        <input type="text" class="form-control mb-2" placeholder="Nombre">
+                        <input type="email" class="form-control mb-2" placeholder="Email">
+                        <textarea class="form-control mb-2" rows="3" placeholder="Mensaje"></textarea>
+                        <button class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Columna 3: Mapa -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Ubicación</h4>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.232!2d-65.297!3d-24.185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223d7b!2sJujuy!5e0!3m2!1ses!2sar!4v0000000000"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <div class="iconos-footer">
+                <span class="icono-travel icono-brujula"></span>
+                <span class="icono-travel icono-avion"></span>
+                <span class="icono-travel icono-auto"></span>
+            </div>
+
+
+
+
+
+            <p class="text-center mb-0">© 2026 Tours Geovana — Todos los derechos reservados</p>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+
+</html>
